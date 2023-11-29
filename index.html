@@ -5,6 +5,93 @@
     <meta name="viewport" content="width=device-width">
     <title>COMPANY</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .parallax {
+          background-image: url("purple-background.jpg");
+          min-height: 500px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+
+      .parallax-content {
+          position:absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%,-50%)
+      }
+
+      h1 {
+          color: pink;
+          font-family: NameFont;
+          font-size: 120px;
+      }
+
+      .pink-background {
+        height: 1000px;
+        background-color: hotpink;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      h2 {
+          color: rebeccapurple;
+          font-size: 50px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          margin: 0;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%,100%);
+      }
+
+      .history {
+          background-image: url("pink-particles.jpg");
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 1000px;
+          height: 500px;
+          border: 15px solid rebeccapurple;
+          padding: 50px;
+          margin: 20px;
+          position: relative;
+      }
+
+      .history-content {
+          font-size: 32px;
+          color: mediumpurple;
+          font-family: 'Segoe UI', sans-serif;
+      }
+
+      .button-text {
+          text-align: center;
+          margin-top: 20px;
+      }
+
+      .button {
+          display: inline-block;
+          padding: 15px 30px;
+          font-size: 18px;
+          font-family: Font;
+          text-decoration: none;
+          background-color: rebeccapurple;
+          color: pink;
+          border: 2px solid rebeccapurple;
+          border-radius: 5px;
+      }
+
+      .button:hover {
+          background-color: pink;
+          color: rebeccapurple
+      }
+    </style>
   </head>
 
   <body>
@@ -24,31 +111,29 @@
         <h1>B-Komachi</h1>
       </div>
     </div>
-
     <div class="pink-background">
-      <h2>HISTORY</h2>
-      <div class="history">
-        <div class="history-content">
-            <p>B-Komachi is an idol group affiliated with Ichigo Productions.Inc, 
-                having two incarnations that share the same name. The newer 
-                incarnation has their iteration consisting of Ruby Hoshino, Kana Arima, and Mem-cho. 
-                While the public had their doubts on this new version of B-Komachi, 
-                they rose to significant popularity ever since their breakout in the Japan Idol Festival, 
-                garnering many fans as they began their climb to fame.</p>
-        </div>
+    <h2>HISTORY</h2>
+    <div class="history">
+      <div class="history-content">
+          <p>B-Komachi is an idol group affiliated with Ichigo Productions.Inc, 
+              having two incarnations that share the same name. The newer 
+              incarnation has their iteration consisting of Ruby Hoshino, Kana Arima, and Mem-cho. 
+              While the public had their doubts on this new version of B-Komachi, 
+              they rose to significant popularity ever since their breakout in the Japan Idol Festival, 
+              garnering many fans as they began their climb to fame.</p>
       </div>
+    </div>
 
       <div class="container">
         <a href="profile.html" class="button">Click here to learn about the members!</a>
       </div>
     </div>
 
+    <footer>
+      <p>&copy; 2023 Ichigo Productions. All Rights Reserved.</p>
+    </footer>
+
   </body>
-
-  <footer>
-    <p>Ichigo Productions</p>
-  </footer>
-
 </html>
 
 
