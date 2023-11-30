@@ -59,10 +59,32 @@ a {
     color: pink
 }
 
+a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
 footer {
     background-color: hotpink;
     color: white;
     padding: 20px;
     text-align: center;
     margin-top: auto;
-  }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        height: auto;
+    }
+
+    ul {
+        display: block;
+        text-align: center;
+    }
+
+    li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
