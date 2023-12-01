@@ -10,61 +10,58 @@
                 text-align: center;
                 padding: 20px;
             }
-
-            h1 {
-                font-family: Font;
-            }
-
+      
             header {
-                color: mediumpurple;
-                font-family: MyFont;
+              color: mediumpurple;
+              font-family: Font;
             }
-
+      
             .image-container img {
-                width: 1300px;
-                height: 700px;
+                width: 1500px;
+                height: 800px;
                 border: 5px solid mediumpurple;
-            }
-
-            .slideshow-container {
-                text-align: center;
-                padding: 20px;
-            }
-
-            .rectangle {
-                width: 800px;
-                height: 300px;
-                background-color: pink;
-                position: relative;
-                border: 5px solid mediumpurple;
-            }
-
-            .circle {
-                position: absolute;
-                width: 250px;
-                height: 250px;
-                border-radius: 50%;
-                top: -200px;
-                left: 50%;
-                transform: translateX(-50%);
-                border: 5px solid mediumpurple;
-            }
-
-            .slideshow {
-                position: relative;
-                max-width: 800px;
-                margin: auto;
-            }
-
-            .slideshow img {
-                max-width: 100%;
-                width: 100%;
-                height: 100%;
                 object-fit: cover;
-                display: none;
-                border-radius: 50%;
             }
-
+      
+            .slideshow-container {
+              text-align: center;
+              padding: 20px;
+            }
+      
+            .rectangle {
+              width: 100%;
+              height: 300px;
+              background-color: pink;
+              position: relative;
+              border: 5px solid mediumpurple;
+            }
+      
+            .circle {
+              position: absolute;
+              width: 250px;
+              height: 250px;
+              border-radius: 50%;
+              top: -200px;
+              left: 50%;
+              transform: translateX(-50%);
+              border: 5px solid mediumpurple;
+            }
+      
+            .slideshow {
+              position: relative;
+              max-width: 800px;
+              margin: auto;
+            }
+      
+            .slideshow img {
+              max-width: 100%;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: none;
+              border-radius: 50%;
+            }
+      
             .slideshow .signature {
                 position: absolute;
                 top: 250px; 
@@ -75,38 +72,57 @@
                 color: hotpink;
                 text-align: center;
             }
-
+      
             .slideshow .text {
-                position: absolute;
-                top: 55%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 24px;
-                color: white;
-                text-align: center;
-                display: none;
+              position: absolute;
+              top: 55%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 24px;
+              color: white;
+              text-align: center;
+              display: none;
             }
-
+      
             .arrow {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                cursor: pointer;
-                font-size: 24px;
-                color: white;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              cursor: pointer;
+              font-size: 24px;
+              color: white;
             }
-
+      
             .prev {
-                left: 20px;
+              left: 20px;
             }
-
+      
             .next {
-                right: 20px;
+              right: 20px;
             }
-
+      
             .prev:hover, .next:hover {
-                background-color: mediumpurple;
+              background-color: mediumpurple;
             }    
+      
+            @media only screen and (max-width: 600px) {
+                .image-container img {
+                    max-width: 100%; 
+                    height: auto;
+                    object-fit: cover;
+                }
+      
+                .circle {
+                  width: 150px; 
+                  height: 150px; 
+                  top: -120px;
+                }
+              
+                .slideshow .signature,
+                .slideshow .text {
+                    font-size: 16px;
+                }
+            }
         </style>
     </head>
 
