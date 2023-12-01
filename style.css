@@ -1,11 +1,11 @@
 @font-face {
     font-family: Font;
-    src: url(Font-1.otf);
+    src: url(Font.otf);
 }
 
 @font-face {
     font-family: NameFont;
-    src: url(TitleFont.ttf);
+    src: url(NameFont.ttf);
 }
 
 body {    
