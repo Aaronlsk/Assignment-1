@@ -92,18 +92,28 @@
           color: rebeccapurple
       }
 
-      @media screen and (max-width: 600px) {
-      body {
-          font-size: 14px;
-      }
+      @media only screen and (max-width: 600px) {
+          .parallax {
+              background-attachment: scroll;
+              min-height: 200px;
+          }
 
-      .parallax-content {
-          top: 30%;
-      }
+          h1 {
+              font-size: 40px;
+          }
 
-      img {
-          max-width: 100%;
-          height: auto;
+          .history {
+              background-attachment: scroll;
+              padding: 10px; 
+              margin: 5px;
+              min-height: 200px;
+              height: 100px;
+              width: 100%;
+          }
+
+          .history-content {
+              font-size: 14px;
+          }
       }
     </style>
   </head>
