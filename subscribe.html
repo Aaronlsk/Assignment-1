@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+    <style>
+        .container {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .sub-box {
+            background-color: pink;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 80px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            align-self: center;
+        }
+
+        .sub-box h2 {
+            color: plum;
+            font-size: 40px;
+            font-family: Font;
+        }
+
+        .sub-box p {
+            color: mediumorchid;
+        }
+
+        .sub-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-info {
+            margin-bottom: 15px;
+            color: plum;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: plum;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid plum;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: plum;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: purple;
+        }
+
+
+    </style>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="tour.html">TOUR</a></li>
+        <li><a href="store.html">STORE</a></li>
+        <li><a href="music.html">MUSIC</a></li>
+        <li><a href="subscribe.html">SUBSCRIBE</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+        <div class="sub-box">
+            <h2>SUBSCRIBE!</h2>
+            <p>Get daily news to keep up to date!</p>
+
+            <form class="sub-form">
+                <div class="form-info">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-info">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value ="" disabled selected>Select Country</option>
+                        <option value ="singapore">Singapore</option>
+                        <option value ="japan">Japan</option>
+                    </select>
+                </div>
+
+                <p>Withdrawal is allowed at any time</p>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Ichigo Productions. All Rights Reserved.</p>
+    </footer>
+  </body>
+ 
+</html>
+
+
+

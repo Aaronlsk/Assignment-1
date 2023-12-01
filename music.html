@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>replit</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <style>
+            header {    
+                background-color: none;
+                color:white;    
+                text-align: center;
+                padding: 10px;    
+                font-size: 30px;
+                font-family: Font;
+            }
+
+            .container {
+                max-width: 1200px;    
+                margin: auto;
+                padding: 20px;  
+            }
+
+            .product {
+                display: flex;    
+                flex-wrap: wrap;
+                justify-content: space-around;    
+                margin: -10px;
+            }
+
+            .product-item {    
+                flex: 30%;
+                margin: 10px;    
+                box-sizing: border-box;
+                background-color: hotpink;    
+                border-radius: 8px;
+                transition: transform 0.3s ease-in-out;    
+                overflow: hidden;
+            }
+
+            .product-image {
+                width: 100%;    
+                max-height: auto;
+                object-fit: contain;    
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;  
+            }
+
+            .product-details {
+                padding: 15px;    
+                margin: 10px;
+            }
+
+            .product-title {    
+                font-weight: bold;
+                margin-bottom: 10px;   
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            .button-text {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .button {
+                font-family: Font;
+                display: inline-block;
+                padding: 15px 30px;
+                font-size: 18px;
+                text-decoration: none;
+                background-color: rebeccapurple;
+                color: pink;
+                border: 2px solid rebeccapurple;
+                border-radius: 5px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .button:hover {
+                background-color: pink;
+                color: rebeccapurple
+            }
+
+            .more-videos-container {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+    <nav>
+        <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="tour.html">TOUR</a></li>
+        <li><a href="store.html">STORE</a></li>
+        <li><a href="music.html">MUSIC</a></li>
+        <li><a href="subscribe.html">SUBSCRIBE</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+        <h1>MUSIC</h1>
+        </header>
+
+        <div class="product">
+            <div class="product-item">
+                <img class="product-image" src="https://www.boston.com/wp-content/uploads/2012/12/24f9e12c-4af5-11e2-9306-c1529ce3062e.jpg" alt="Product 1">
+            </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <div class="product-title">
+                    <header>
+                    <h1>B-Komachi</h1>
+                    <h2>FIRST ALBUM</h2>
+                    </header>
+                    <a href="store.html" class="button">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <header>
+        <h2>VIDEOS</h2>
+        </header>
+        <iframe width="1200" height="700" src="https://www.youtube.com/embed/S-UmqvA7uR8" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <header>
+        <h3>OTHERS</h3>
+    </header>
+    <div class="more-videos-container">
+        <iframe width="400" height="169" src="https://www.youtube.com/embed/GQb3LxrQI4c" frameborder="0" allowfullscreen></iframe>
+        <iframe width="400" height="169" src="https://www.youtube.com/embed/Qu8YXWVxJr4" frameborder="0" allowfullscreen></iframe>
+        <iframe width="400" height="169" src="https://www.youtube.com/embed/7lpZ_dEvLSs" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Ichigo Productions. All Rights Reserved.</p>
+    </footer>
+    </body>
+</html>
